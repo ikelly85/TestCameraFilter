@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3318B4991C604E5B002F6155 /* SepiaShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3318B4971C604E5B002F6155 /* SepiaShader.fsh */; };
+		3318B49A1C604E5B002F6155 /* SepiaShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3318B4981C604E5B002F6155 /* SepiaShader.vsh */; };
+		335C12941C5F25F50030F4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335C12931C5F25F50030F4A4 /* main.m */; };
+		335C12971C5F25F50030F4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335C12961C5F25F50030F4A4 /* AppDelegate.m */; };
+		335C129A1C5F25F50030F4A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335C12991C5F25F50030F4A4 /* ViewController.m */; };
+		335C129D1C5F25F50030F4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335C129B1C5F25F50030F4A4 /* Main.storyboard */; };
+		335C129F1C5F25F50030F4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335C129E1C5F25F50030F4A4 /* Assets.xcassets */; };
+		335C12A21C5F25F50030F4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335C12A01C5F25F50030F4A4 /* LaunchScreen.storyboard */; };
+		335C12AC1C5F27050030F4A4 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 335C12AB1C5F27050030F4A4 /* EAGLView.m */; };
+		335C12AE1C5F27360030F4A4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335C12AD1C5F27360030F4A4 /* OpenGLES.framework */; };
+		335C12B01C5F2DE70030F4A4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335C12AF1C5F2DE70030F4A4 /* AVFoundation.framework */; };
+		335C12B81C5F35DC0030F4A4 /* DirectDisplayShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 335C12B21C5F35DC0030F4A4 /* DirectDisplayShader.fsh */; };
+		335C12B91C5F35DC0030F4A4 /* DirectDisplayShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 335C12B31C5F35DC0030F4A4 /* DirectDisplayShader.vsh */; };
+		335C12BA1C5F35DC0030F4A4 /* PositionShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 335C12B41C5F35DC0030F4A4 /* PositionShader.fsh */; };
+		335C12BB1C5F35DC0030F4A4 /* PositionShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 335C12B51C5F35DC0030F4A4 /* PositionShader.vsh */; };
+		335C12BC1C5F35DC0030F4A4 /* ThresholdShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 335C12B61C5F35DC0030F4A4 /* ThresholdShader.fsh */; };
+		335C12BD1C5F35DC0030F4A4 /* ThresholdShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 335C12B71C5F35DC0030F4A4 /* ThresholdShader.vsh */; };
+		33B8CD531C5F5A0C009B8C11 /* GrayScaleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 33B8CD511C5F5A0C009B8C11 /* GrayScaleShader.fsh */; };
+		33B8CD541C5F5A0C009B8C11 /* GrayScaleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 33B8CD521C5F5A0C009B8C11 /* GrayScaleShader.vsh */; };
+		A25119151C7BFEA300D51D04 /* SketchShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A25119141C7BFEA300D51D04 /* SketchShader.fsh */; };
+		A25119171C7BFEB300D51D04 /* SketchShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A25119161C7BFEB300D51D04 /* SketchShader.vsh */; };
+		A25872B21C9A44FC0054AFE0 /* sample3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A25872B11C9A44FC0054AFE0 /* sample3.jpg */; };
+		A25872B41C9A47E00054AFE0 /* SmoothingMask.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872B31C9A47E00054AFE0 /* SmoothingMask.vsh */; };
+		A25872B61C9A47EA0054AFE0 /* SmoothingMask.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872B51C9A47EA0054AFE0 /* SmoothingMask.fsh */; };
+		A25872B81C9A4E6B0054AFE0 /* SwirlShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872B71C9A4E6B0054AFE0 /* SwirlShader.vsh */; };
+		A25872BA1C9A4E740054AFE0 /* SwirlShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872B91C9A4E740054AFE0 /* SwirlShader.fsh */; };
+		A25872BC1C9A9EC80054AFE0 /* DistortionShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872BB1C9A9EC80054AFE0 /* DistortionShader.vsh */; };
+		A25872BE1C9A9ED20054AFE0 /* DistortionShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872BD1C9A9ED20054AFE0 /* DistortionShader.fsh */; };
+		A25872C01C9A9EDC0054AFE0 /* RefractionShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872BF1C9A9EDC0054AFE0 /* RefractionShader.vsh */; };
+		A25872C21C9A9EE70054AFE0 /* RefractionShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A25872C11C9A9EE70054AFE0 /* RefractionShader.fsh */; };
+		A290D7731C71C755004D293D /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = A290D7711C71C755004D293D /* sample.png */; };
+		A290D7741C71C755004D293D /* sample2.png in Resources */ = {isa = PBXBuildFile; fileRef = A290D7721C71C755004D293D /* sample2.png */; };
+		A290D7771C71F721004D293D /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = A290D7751C71F721004D293D /* beetle.png */; };
+		A290D7781C71F721004D293D /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = A290D7761C71F721004D293D /* leaves.gif */; };
+		A290D77A1C72C3DD004D293D /* fairy_tale.png in Resources */ = {isa = PBXBuildFile; fileRef = A290D7791C72C3DD004D293D /* fairy_tale.png */; };
+		A290D7811C749060004D293D /* AlphaBlendingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A290D7801C749060004D293D /* AlphaBlendingShader.fsh */; };
+		A290D7831C74907E004D293D /* AlphaBlendingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A290D7821C74907E004D293D /* AlphaBlendingShader.vsh */; };
+		A290D7851C749298004D293D /* LookupFilterShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A290D7841C749298004D293D /* LookupFilterShader.fsh */; };
+		A290D7871C7492AE004D293D /* LookupFilterShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A290D7861C7492AE004D293D /* LookupFilterShader.vsh */; };
+		A290D7891C749B72004D293D /* RotateShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A290D7881C749B72004D293D /* RotateShader.fsh */; };
+		A290D78B1C749B82004D293D /* RotateShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A290D78A1C749B82004D293D /* RotateShader.vsh */; };
+		A2A42FFE1C9809A200939FFA /* BilateralShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A2A42FFD1C9809A200939FFA /* BilateralShader.fsh */; };
+		A2A430001C9809B000939FFA /* BilateralShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A2A42FFF1C9809B000939FFA /* BilateralShader.vsh */; };
+		A2ABEF831C7DD5AE00BBDD12 /* InvertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A2ABEF821C7DD5AE00BBDD12 /* InvertShader.vsh */; };
+		A2ABEF851C7DD5B900BBDD12 /* InvertShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A2ABEF841C7DD5B900BBDD12 /* InvertShader.fsh */; };
+		A2E5B3551C8D4D5A002C5DAA /* HBlurShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A2E5B3541C8D4D5A002C5DAA /* HBlurShader.fsh */; };
+		A2E5B3571C8D4D62002C5DAA /* HBlurShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A2E5B3561C8D4D62002C5DAA /* HBlurShader.vsh */; };
+		A2E5B3591C8D4D69002C5DAA /* VBlurShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A2E5B3581C8D4D69002C5DAA /* VBlurShader.fsh */; };
+		A2E5B35B1C8D4D74002C5DAA /* VBlurShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A2E5B35A1C8D4D74002C5DAA /* VBlurShader.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3318B4971C604E5B002F6155 /* SepiaShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SepiaShader.fsh; sourceTree = "<group>"; };
+		3318B4981C604E5B002F6155 /* SepiaShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SepiaShader.vsh; sourceTree = "<group>"; };
+		335C128F1C5F25F50030F4A4 /* TestCameraFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCameraFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		335C12931C5F25F50030F4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		335C12951C5F25F50030F4A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		335C12961C5F25F50030F4A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		335C12981C5F25F50030F4A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		335C12991C5F25F50030F4A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		335C129C1C5F25F50030F4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		335C129E1C5F25F50030F4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		335C12A11C5F25F50030F4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		335C12A31C5F25F50030F4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335C12AA1C5F27050030F4A4 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		335C12AB1C5F27050030F4A4 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		335C12AD1C5F27360030F4A4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		335C12AF1C5F2DE70030F4A4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		335C12B21C5F35DC0030F4A4 /* DirectDisplayShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DirectDisplayShader.fsh; sourceTree = "<group>"; };
+		335C12B31C5F35DC0030F4A4 /* DirectDisplayShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DirectDisplayShader.vsh; sourceTree = "<group>"; };
+		335C12B41C5F35DC0030F4A4 /* PositionShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PositionShader.fsh; sourceTree = "<group>"; };
+		335C12B51C5F35DC0030F4A4 /* PositionShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PositionShader.vsh; sourceTree = "<group>"; };
+		335C12B61C5F35DC0030F4A4 /* ThresholdShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ThresholdShader.fsh; sourceTree = "<group>"; };
+		335C12B71C5F35DC0030F4A4 /* ThresholdShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ThresholdShader.vsh; sourceTree = "<group>"; };
+		33B8CD511C5F5A0C009B8C11 /* GrayScaleShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GrayScaleShader.fsh; sourceTree = "<group>"; };
+		33B8CD521C5F5A0C009B8C11 /* GrayScaleShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GrayScaleShader.vsh; sourceTree = "<group>"; };
+		A25119141C7BFEA300D51D04 /* SketchShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SketchShader.fsh; sourceTree = "<group>"; };
+		A25119161C7BFEB300D51D04 /* SketchShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SketchShader.vsh; sourceTree = "<group>"; };
+		A25872B11C9A44FC0054AFE0 /* sample3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample3.jpg; sourceTree = "<group>"; };
+		A25872B31C9A47E00054AFE0 /* SmoothingMask.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SmoothingMask.vsh; sourceTree = "<group>"; };
+		A25872B51C9A47EA0054AFE0 /* SmoothingMask.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SmoothingMask.fsh; sourceTree = "<group>"; };
+		A25872B71C9A4E6B0054AFE0 /* SwirlShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SwirlShader.vsh; sourceTree = "<group>"; };
+		A25872B91C9A4E740054AFE0 /* SwirlShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SwirlShader.fsh; sourceTree = "<group>"; };
+		A25872BB1C9A9EC80054AFE0 /* DistortionShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DistortionShader.vsh; sourceTree = "<group>"; };
+		A25872BD1C9A9ED20054AFE0 /* DistortionShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DistortionShader.fsh; sourceTree = "<group>"; };
+		A25872BF1C9A9EDC0054AFE0 /* RefractionShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RefractionShader.vsh; sourceTree = "<group>"; };
+		A25872C11C9A9EE70054AFE0 /* RefractionShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RefractionShader.fsh; sourceTree = "<group>"; };
+		A290D7711C71C755004D293D /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		A290D7721C71C755004D293D /* sample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample2.png; sourceTree = "<group>"; };
+		A290D7751C71F721004D293D /* beetle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beetle.png; sourceTree = "<group>"; };
+		A290D7761C71F721004D293D /* leaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaves.gif; sourceTree = "<group>"; };
+		A290D7791C72C3DD004D293D /* fairy_tale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fairy_tale.png; sourceTree = "<group>"; };
+		A290D7801C749060004D293D /* AlphaBlendingShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AlphaBlendingShader.fsh; sourceTree = "<group>"; };
+		A290D7821C74907E004D293D /* AlphaBlendingShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AlphaBlendingShader.vsh; sourceTree = "<group>"; };
+		A290D7841C749298004D293D /* LookupFilterShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LookupFilterShader.fsh; sourceTree = "<group>"; };
+		A290D7861C7492AE004D293D /* LookupFilterShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LookupFilterShader.vsh; sourceTree = "<group>"; };
+		A290D7881C749B72004D293D /* RotateShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RotateShader.fsh; sourceTree = "<group>"; };
+		A290D78A1C749B82004D293D /* RotateShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RotateShader.vsh; sourceTree = "<group>"; };
+		A2A42FFD1C9809A200939FFA /* BilateralShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BilateralShader.fsh; sourceTree = "<group>"; };
+		A2A42FFF1C9809B000939FFA /* BilateralShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BilateralShader.vsh; sourceTree = "<group>"; };
+		A2ABEF821C7DD5AE00BBDD12 /* InvertShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = InvertShader.vsh; sourceTree = "<group>"; };
+		A2ABEF841C7DD5B900BBDD12 /* InvertShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = InvertShader.fsh; sourceTree = "<group>"; };
+		A2E5B3541C8D4D5A002C5DAA /* HBlurShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = HBlurShader.fsh; sourceTree = "<group>"; };
+		A2E5B3561C8D4D62002C5DAA /* HBlurShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = HBlurShader.vsh; sourceTree = "<group>"; };
+		A2E5B3581C8D4D69002C5DAA /* VBlurShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VBlurShader.fsh; sourceTree = "<group>"; };
+		A2E5B35A1C8D4D74002C5DAA /* VBlurShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VBlurShader.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		335C128C1C5F25F50030F4A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335C12B01C5F2DE70030F4A4 /* AVFoundation.framework in Frameworks */,
+				335C12AE1C5F27360030F4A4 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		335C12861C5F25F50030F4A4 = {
+			isa = PBXGroup;
+			children = (
+				335C12AF1C5F2DE70030F4A4 /* AVFoundation.framework */,
+				335C12AD1C5F27360030F4A4 /* OpenGLES.framework */,
+				335C12911C5F25F50030F4A4 /* TestCameraFilter */,
+				335C12901C5F25F50030F4A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		335C12901C5F25F50030F4A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				335C128F1C5F25F50030F4A4 /* TestCameraFilter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		335C12911C5F25F50030F4A4 /* TestCameraFilter */ = {
+			isa = PBXGroup;
+			children = (
+				A290D7791C72C3DD004D293D /* fairy_tale.png */,
+				A290D7751C71F721004D293D /* beetle.png */,
+				A290D7761C71F721004D293D /* leaves.gif */,
+				A290D7711C71C755004D293D /* sample.png */,
+				A290D7721C71C755004D293D /* sample2.png */,
+				A25872B11C9A44FC0054AFE0 /* sample3.jpg */,
+				335C12A91C5F26F00030F4A4 /* Classes */,
+				335C12951C5F25F50030F4A4 /* AppDelegate.h */,
+				335C12961C5F25F50030F4A4 /* AppDelegate.m */,
+				335C12981C5F25F50030F4A4 /* ViewController.h */,
+				335C12991C5F25F50030F4A4 /* ViewController.m */,
+				335C129B1C5F25F50030F4A4 /* Main.storyboard */,
+				335C129E1C5F25F50030F4A4 /* Assets.xcassets */,
+				335C12A01C5F25F50030F4A4 /* LaunchScreen.storyboard */,
+				335C12A31C5F25F50030F4A4 /* Info.plist */,
+				335C12921C5F25F50030F4A4 /* Supporting Files */,
+			);
+			path = TestCameraFilter;
+			sourceTree = "<group>";
+		};
+		335C12921C5F25F50030F4A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				335C12931C5F25F50030F4A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		335C12A91C5F26F00030F4A4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				335C12B11C5F35DC0030F4A4 /* Shaders */,
+				335C12AA1C5F27050030F4A4 /* EAGLView.h */,
+				335C12AB1C5F27050030F4A4 /* EAGLView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		335C12B11C5F35DC0030F4A4 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				33B8CD501C5F5A0C009B8C11 /* Maded */,
+				335C12B21C5F35DC0030F4A4 /* DirectDisplayShader.fsh */,
+				335C12B31C5F35DC0030F4A4 /* DirectDisplayShader.vsh */,
+				335C12B41C5F35DC0030F4A4 /* PositionShader.fsh */,
+				335C12B51C5F35DC0030F4A4 /* PositionShader.vsh */,
+				335C12B61C5F35DC0030F4A4 /* ThresholdShader.fsh */,
+				335C12B71C5F35DC0030F4A4 /* ThresholdShader.vsh */,
+				A290D7801C749060004D293D /* AlphaBlendingShader.fsh */,
+				A290D7821C74907E004D293D /* AlphaBlendingShader.vsh */,
+				A290D7841C749298004D293D /* LookupFilterShader.fsh */,
+				A290D7861C7492AE004D293D /* LookupFilterShader.vsh */,
+				A290D7881C749B72004D293D /* RotateShader.fsh */,
+				A290D78A1C749B82004D293D /* RotateShader.vsh */,
+				A25119141C7BFEA300D51D04 /* SketchShader.fsh */,
+				A25119161C7BFEB300D51D04 /* SketchShader.vsh */,
+				A2ABEF821C7DD5AE00BBDD12 /* InvertShader.vsh */,
+				A2ABEF841C7DD5B900BBDD12 /* InvertShader.fsh */,
+				A2E5B3541C8D4D5A002C5DAA /* HBlurShader.fsh */,
+				A2E5B3561C8D4D62002C5DAA /* HBlurShader.vsh */,
+				A2E5B3581C8D4D69002C5DAA /* VBlurShader.fsh */,
+				A2E5B35A1C8D4D74002C5DAA /* VBlurShader.vsh */,
+				A2A42FFD1C9809A200939FFA /* BilateralShader.fsh */,
+				A2A42FFF1C9809B000939FFA /* BilateralShader.vsh */,
+				A25872B51C9A47EA0054AFE0 /* SmoothingMask.fsh */,
+				A25872B31C9A47E00054AFE0 /* SmoothingMask.vsh */,
+				A25872B91C9A4E740054AFE0 /* SwirlShader.fsh */,
+				A25872B71C9A4E6B0054AFE0 /* SwirlShader.vsh */,
+				A25872BD1C9A9ED20054AFE0 /* DistortionShader.fsh */,
+				A25872BB1C9A9EC80054AFE0 /* DistortionShader.vsh */,
+				A25872C11C9A9EE70054AFE0 /* RefractionShader.fsh */,
+				A25872BF1C9A9EDC0054AFE0 /* RefractionShader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		33B8CD501C5F5A0C009B8C11 /* Maded */ = {
+			isa = PBXGroup;
+			children = (
+				3318B4971C604E5B002F6155 /* SepiaShader.fsh */,
+				3318B4981C604E5B002F6155 /* SepiaShader.vsh */,
+				33B8CD511C5F5A0C009B8C11 /* GrayScaleShader.fsh */,
+				33B8CD521C5F5A0C009B8C11 /* GrayScaleShader.vsh */,
+			);
+			path = Maded;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		335C128E1C5F25F50030F4A4 /* TestCameraFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335C12A61C5F25F50030F4A4 /* Build configuration list for PBXNativeTarget "TestCameraFilter" */;
+			buildPhases = (
+				335C128B1C5F25F50030F4A4 /* Sources */,
+				335C128C1C5F25F50030F4A4 /* Frameworks */,
+				335C128D1C5F25F50030F4A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCameraFilter;
+			productName = TestCameraFilter;
+			productReference = 335C128F1C5F25F50030F4A4 /* TestCameraFilter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		335C12871C5F25F50030F4A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CampMobile;
+				TargetAttributes = {
+					335C128E1C5F25F50030F4A4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 335C128A1C5F25F50030F4A4 /* Build configuration list for PBXProject "TestCameraFilter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 335C12861C5F25F50030F4A4;
+			productRefGroup = 335C12901C5F25F50030F4A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				335C128E1C5F25F50030F4A4 /* TestCameraFilter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		335C128D1C5F25F50030F4A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25872B41C9A47E00054AFE0 /* SmoothingMask.vsh in Resources */,
+				33B8CD541C5F5A0C009B8C11 /* GrayScaleShader.vsh in Resources */,
+				A2A42FFE1C9809A200939FFA /* BilateralShader.fsh in Resources */,
+				335C12B91C5F35DC0030F4A4 /* DirectDisplayShader.vsh in Resources */,
+				A2ABEF831C7DD5AE00BBDD12 /* InvertShader.vsh in Resources */,
+				A290D7851C749298004D293D /* LookupFilterShader.fsh in Resources */,
+				A2E5B3591C8D4D69002C5DAA /* VBlurShader.fsh in Resources */,
+				A290D7741C71C755004D293D /* sample2.png in Resources */,
+				335C12A21C5F25F50030F4A4 /* LaunchScreen.storyboard in Resources */,
+				A290D7891C749B72004D293D /* RotateShader.fsh in Resources */,
+				A25872C21C9A9EE70054AFE0 /* RefractionShader.fsh in Resources */,
+				3318B49A1C604E5B002F6155 /* SepiaShader.vsh in Resources */,
+				A290D7871C7492AE004D293D /* LookupFilterShader.vsh in Resources */,
+				3318B4991C604E5B002F6155 /* SepiaShader.fsh in Resources */,
+				A2E5B3571C8D4D62002C5DAA /* HBlurShader.vsh in Resources */,
+				A25872B81C9A4E6B0054AFE0 /* SwirlShader.vsh in Resources */,
+				A290D7731C71C755004D293D /* sample.png in Resources */,
+				A25872B61C9A47EA0054AFE0 /* SmoothingMask.fsh in Resources */,
+				A25872BC1C9A9EC80054AFE0 /* DistortionShader.vsh in Resources */,
+				335C129F1C5F25F50030F4A4 /* Assets.xcassets in Resources */,
+				335C12BA1C5F35DC0030F4A4 /* PositionShader.fsh in Resources */,
+				A25872B21C9A44FC0054AFE0 /* sample3.jpg in Resources */,
+				A2ABEF851C7DD5B900BBDD12 /* InvertShader.fsh in Resources */,
+				A2E5B35B1C8D4D74002C5DAA /* VBlurShader.vsh in Resources */,
+				A290D77A1C72C3DD004D293D /* fairy_tale.png in Resources */,
+				A290D78B1C749B82004D293D /* RotateShader.vsh in Resources */,
+				A25872C01C9A9EDC0054AFE0 /* RefractionShader.vsh in Resources */,
+				A290D7831C74907E004D293D /* AlphaBlendingShader.vsh in Resources */,
+				A25872BE1C9A9ED20054AFE0 /* DistortionShader.fsh in Resources */,
+				33B8CD531C5F5A0C009B8C11 /* GrayScaleShader.fsh in Resources */,
+				A25119171C7BFEB300D51D04 /* SketchShader.vsh in Resources */,
+				335C12B81C5F35DC0030F4A4 /* DirectDisplayShader.fsh in Resources */,
+				335C129D1C5F25F50030F4A4 /* Main.storyboard in Resources */,
+				A2A430001C9809B000939FFA /* BilateralShader.vsh in Resources */,
+				A290D7811C749060004D293D /* AlphaBlendingShader.fsh in Resources */,
+				A2E5B3551C8D4D5A002C5DAA /* HBlurShader.fsh in Resources */,
+				335C12BC1C5F35DC0030F4A4 /* ThresholdShader.fsh in Resources */,
+				335C12BB1C5F35DC0030F4A4 /* PositionShader.vsh in Resources */,
+				A290D7781C71F721004D293D /* leaves.gif in Resources */,
+				A25872BA1C9A4E740054AFE0 /* SwirlShader.fsh in Resources */,
+				A25119151C7BFEA300D51D04 /* SketchShader.fsh in Resources */,
+				A290D7771C71F721004D293D /* beetle.png in Resources */,
+				335C12BD1C5F35DC0030F4A4 /* ThresholdShader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		335C128B1C5F25F50030F4A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335C129A1C5F25F50030F4A4 /* ViewController.m in Sources */,
+				335C12AC1C5F27050030F4A4 /* EAGLView.m in Sources */,
+				335C12971C5F25F50030F4A4 /* AppDelegate.m in Sources */,
+				335C12941C5F25F50030F4A4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		335C129B1C5F25F50030F4A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335C129C1C5F25F50030F4A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		335C12A01C5F25F50030F4A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335C12A11C5F25F50030F4A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		335C12A41C5F25F50030F4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		335C12A51C5F25F50030F4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		335C12A71C5F25F50030F4A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestCameraFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.campmobile.snowent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		335C12A81C5F25F50030F4A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestCameraFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.campmobile.snowent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		335C128A1C5F25F50030F4A4 /* Build configuration list for PBXProject "TestCameraFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335C12A41C5F25F50030F4A4 /* Debug */,
+				335C12A51C5F25F50030F4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335C12A61C5F25F50030F4A4 /* Build configuration list for PBXNativeTarget "TestCameraFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335C12A71C5F25F50030F4A4 /* Debug */,
+				335C12A81C5F25F50030F4A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 335C12871C5F25F50030F4A4 /* Project object */;
+}
